@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://dxlyxc-1302474910.cos.ap-shanghai.myqcloud.com/JX-2.jpg">
 <meta property="og:image" content="https://dxlyxc-1302474910.cos.ap-shanghai.myqcloud.com/JX-3.png">
 <meta property="article:published_time" content="2019-06-08T02:37:22.000Z">
-<meta property="article:modified_time" content="2020-06-22T06:26:40.287Z">
+<meta property="article:modified_time" content="2020-06-22T06:50:13.908Z">
 <meta property="article:author" content="DuoXingLuoYu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://dxlyxc-1302474910.cos.ap-shanghai.myqcloud.com/20200622084816.png">
@@ -253,6 +253,7 @@
 <p>其次自然是可以提供网络影音播放的能力，这样就不需要吧电影拷来拷去了。</p>
 <p>还有，由于我现在是一名带学生，还是被宿舍路由器限制单设备联网的带学生，于是乎也对NAS有了软路由的需求。</p>
 <p>然后，还有一个非常重要的-功耗!! 简单计算一下7x24小时工作的NAS功耗每高10W每年电费就要多近90元，因此要尽量将NAS功耗压在50W以下。</p>
+<p>最后，最重要的预算。不包含硬盘控制成品总价在2000元以下。</p>
 <p>在确定需求之后就是确定NAS的配置了(成品高配NAS价格贵到爆炸，直接puss)。</p>
 <h5 id="2-2配置单"><a href="#2-2配置单" class="headerlink" title="2.2配置单"></a>2.2配置单</h5><p>在组建NAS之前，查询相关的资料是必须的(资料来源论坛:<a href="https://www.csdn.net/" target="_blank" rel="noopener">CSDN</a>，<a href="http://bbs.pceva.com.cn/" target="_blank" rel="noopener">PCEVAE</a>，<a href="https://www.chiphell.com/" target="_blank" rel="noopener">chiphell</a>，<a href="https://www.smzdm.com/" target="_blank" rel="noopener">什么值得买</a>视频:<a href="https://www.bilibili.com/video/BV1AK4y1t7Jb" target="_blank" rel="noopener">翼王</a>，<a href="https://space.bilibili.com/20274090" target="_blank" rel="noopener">钱韦德</a>，<a href="https://space.bilibili.com/28457" target="_blank" rel="noopener">司波图</a>，<a href="https://space.bilibili.com/626863" target="_blank" rel="noopener">旋律果子</a>)</p>
 <p>在参考一系列资料以后(主要参考<a href="https://www.bilibili.com/video/BV1AK4y1t7Jb" target="_blank" rel="noopener">视频</a>)列出了一下清单:</p>
@@ -338,8 +339,34 @@
 <h5 id="2-5CPU"><a href="#2-5CPU" class="headerlink" title="2.5CPU"></a>2.5CPU</h5><p>确定了机箱和主板的型号之后，自然而然就到了CPU的选择了。</p>
 <p>CPU的选择除了依然借助<a href="https://pcpartpicker.com/" target="_blank" rel="noopener">pcoartpicker</a>的信息以外，还有参考<a href="https://cpuboss.com/" target="_blank" rel="noopener">CPU Boss</a>的数据(包括后面出现的CPU数据都来自这两个网址)。</p>
 <p>由于NAS最重要的是存储空间，因而P9D-I主板上的唯一一个PCI-E x16只能让位给阵列卡提供更多的SATA接口。于是独立显卡就无法安装了，但是又因为NAS的功能需求里就包含了影音播放的功能，那么CPU就 必须带有核显了。</p>
-<p>但但但但是!!!!带有核显的E3 1150针的CPU</p>
-<h5 id="2-6散热"><a href="#2-6散热" class="headerlink" title="2.6散热"></a>2.6散热</h5><h5 id="2-7内存"><a href="#2-7内存" class="headerlink" title="2.7内存"></a>2.7内存</h5><h5 id="2-8电源"><a href="#2-8电源" class="headerlink" title="2.8电源"></a>2.8电源</h5><h5 id="2-9PCI-E拓展卡"><a href="#2-9PCI-E拓展卡" class="headerlink" title="2.9PCI-E拓展卡"></a>2.9PCI-E拓展卡</h5><h5 id="0-更新时间"><a href="#0-更新时间" class="headerlink" title="0.更新时间."></a>0.更新时间.</h5><ol>
+<p>但但但但是!!!!带有核显的Xeon E3 1150针CPU的TDP都高达84W!就算平时正常使用达不到这么高的TDP，但依然可能导致我的钱包大破:D(而且像带核显最便宜的E3 CPU: E3-1225V3也要300元依旧大破)。综上所述，只能放弃服务器级的E3 CPU了，然后就盯上了Core I3系列CPU。较低的功耗，带有核显简直完美XD。</p>
+<p>在确定选择I3系列CPU以后，那么就算对比价格和性能了。在使用<a href="https://cpuboss.com/" target="_blank" rel="noopener">CPU Boss</a>并经过一段时间终于挑选出来一个CPU:I3-4160。</p>
+<table>
+<thead>
+<tr>
+<th align="center">型号</th>
+<th align="center">插座</th>
+<th align="center">核显-线程</th>
+<th align="center">基础频率</th>
+<th align="center">TDP</th>
+<th align="center">核显</th>
+<th align="center">内存</th>
+<th align="center">光刻</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">I3-4160</td>
+<td align="center">LGA1150</td>
+<td align="center">2核4线</td>
+<td align="center">3.6GHz</td>
+<td align="center">54W</td>
+<td align="center">4400</td>
+<td align="center">支持ECC</td>
+<td align="center">22纳米</td>
+</tr>
+</tbody></table>
+<p>(之所以不选择带T的I3,那就是因为带T的CPU功耗是低了但是性能也低，而且还更贵了，puss)</p>
+<h5 id="2-6散热"><a href="#2-6散热" class="headerlink" title="2.6散热"></a>2.6散热</h5><h5 id="2-7内存"><a href="#2-7内存" class="headerlink" title="2.7内存"></a>2.7内存</h5><h5 id="2-8电源"><a href="#2-8电源" class="headerlink" title="2.8电源"></a>2.8电源</h5><h5 id="2-9拓展"><a href="#2-9拓展" class="headerlink" title="2.9拓展"></a>2.9拓展</h5><h5 id="0-更新时间"><a href="#0-更新时间" class="headerlink" title="0.更新时间."></a>0.更新时间.</h5><ol>
 <li>2020.06.21</li>
 <li>2020.06.22</li>
 </ol>
