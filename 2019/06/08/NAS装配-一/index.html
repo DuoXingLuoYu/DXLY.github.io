@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>hexo+typora 插入图片 | DXLY的小窝</title>
+  <title>NAS装配系列第一篇 | DXLY的小窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,7 +23,7 @@
   </style>
   <meta name="description" content="NAS装配系列第一篇">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo+typora 插入图片">
+<meta property="og:title" content="NAS装配系列第一篇">
 <meta property="og:url" content="http://yoursite.com/2019/06/08/NAS%E8%A3%85%E9%85%8D-%E4%B8%80/index.html">
 <meta property="og:site_name" content="DXLY的小窝">
 <meta property="og:description" content="NAS装配系列第一篇">
@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://dxlyxc-1302474910.cos.ap-shanghai.myqcloud.com/JX-2.jpg">
 <meta property="og:image" content="https://dxlyxc-1302474910.cos.ap-shanghai.myqcloud.com/JX-3.png">
 <meta property="article:published_time" content="2019-06-08T02:37:22.000Z">
-<meta property="article:modified_time" content="2020-06-22T06:11:41.035Z">
+<meta property="article:modified_time" content="2020-06-22T06:26:40.287Z">
 <meta property="article:author" content="DuoXingLuoYu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://dxlyxc-1302474910.cos.ap-shanghai.myqcloud.com/20200622084816.png">
@@ -218,7 +218,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hexo+typora 插入图片
+      NAS装配系列第一篇
     </h1>
   
 
@@ -251,6 +251,9 @@
 <h4 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h4><p>​        在2020年一月底，我为我正在服役的笔记本添置了一块2T的西数机械硬盘。但是时间推移，146天过去了。随着时间增长的是数据量的增长，1853GB的空间只剩下了不足860GB，也就是说在这一段时间里平均每一天就产生了5GB的数据。伴随而来的就是我的存储空间不足恐惧症XD。<br>​        而后，在曾经看到LTT的PB级服务器以后，又在B站看到了翼王组装的小NAS.于是乎，我便萌生了自建NAS的企划。</p>
 <h4 id="2-NAS硬件选择"><a href="#2-NAS硬件选择" class="headerlink" title="2.NAS硬件选择"></a>2.NAS硬件选择</h4><h5 id="2-1NAS功能需求"><a href="#2-1NAS功能需求" class="headerlink" title="2.1NAS功能需求"></a>2.1NAS功能需求</h5><p>首先就是NAS最根本的功能:网络存储，我希望NAS可以又至少20TB的存储空间来满足我日益增长的数据存储需求。</p>
 <p>其次自然是可以提供网络影音播放的能力，这样就不需要吧电影拷来拷去了。</p>
+<p>还有，由于我现在是一名带学生，还是被宿舍路由器限制单设备联网的带学生，于是乎也对NAS有了软路由的需求。</p>
+<p>然后，还有一个非常重要的-功耗!! 简单计算一下7x24小时工作的NAS功耗每高10W每年电费就要多近90元，因此要尽量将NAS功耗压在50W以下。</p>
+<p>在确定需求之后就是确定NAS的配置了(成品高配NAS价格贵到爆炸，直接puss)。</p>
 <h5 id="2-2配置单"><a href="#2-2配置单" class="headerlink" title="2.2配置单"></a>2.2配置单</h5><p>在组建NAS之前，查询相关的资料是必须的(资料来源论坛:<a href="https://www.csdn.net/" target="_blank" rel="noopener">CSDN</a>，<a href="http://bbs.pceva.com.cn/" target="_blank" rel="noopener">PCEVAE</a>，<a href="https://www.chiphell.com/" target="_blank" rel="noopener">chiphell</a>，<a href="https://www.smzdm.com/" target="_blank" rel="noopener">什么值得买</a>视频:<a href="https://www.bilibili.com/video/BV1AK4y1t7Jb" target="_blank" rel="noopener">翼王</a>，<a href="https://space.bilibili.com/20274090" target="_blank" rel="noopener">钱韦德</a>，<a href="https://space.bilibili.com/28457" target="_blank" rel="noopener">司波图</a>，<a href="https://space.bilibili.com/626863" target="_blank" rel="noopener">旋律果子</a>)</p>
 <p>在参考一系列资料以后(主要参考<a href="https://www.bilibili.com/video/BV1AK4y1t7Jb" target="_blank" rel="noopener">视频</a>)列出了一下清单:</p>
 <table>
@@ -303,7 +306,7 @@
 <p><img src="https://dxlyxc-1302474910.cos.ap-shanghai.myqcloud.com/JX-3.png" alt></p>
 <p>在光驱位加上4x2.5吋硬盘架的情况下，那么HP Gen7机箱在这比较小的空间里可以塞下8块硬盘(重点是价格便宜多了:D)，就这么看在这一台NAS装配完成以后，我希望它可以提供4x4Tb+3x2Tb+120G共计约22Tb的存储空间(如果资金充足则提高到50Tb)并且正常服役至少3年。</p>
 <h5 id="2-4主板"><a href="#2-4主板" class="headerlink" title="2.4主板"></a>2.4主板</h5><p>在确定机箱是HP Gen7以后就需要确定主板。主板，CPU和散热的型号主要参考<a href="https://pcpartpicker.com/" target="_blank" rel="noopener">pcoartpicker</a>的信息。</p>
-<p>我对于NAS要求比较高但是预算又比较低，(mini-itx尺寸,双千兆,4个以上的SATA接口,能上ECC内存)，所以只能使用老一些的服务器级主板。于是乎华硕妖板P9D-I进入视线。500元价格，mini-itx尺寸，LGA1150接口，详细配置如下表(<a href="https://www.asus.com.cn/supportonly/P9D-I" target="_blank" rel="noopener">官网资料</a>): </p>
+<p>我对于NAS要求比较高但是预算又比较低，(mini-itx尺寸,4个以上的SATA接口,能上ECC,能跑软路由)，所以只能使用老一些的服务器级主板。于是乎华硕妖板P9D-I进入视线。500元价格，mini-itx尺寸，LGA1150接口，详细配置如下表(<a href="https://www.asus.com.cn/supportonly/P9D-I" target="_blank" rel="noopener">官网资料</a>): </p>
 <table>
 <thead>
 <tr>
@@ -334,7 +337,8 @@
 <p>就纸面参数而言，华硕妖板称号名不虚传，不过P9D-I这一个服务器主板最大的遗憾就是不支持HDMI视频输出，不过只是当NAS使用也无所谓没有HDMI接口了。</p>
 <h5 id="2-5CPU"><a href="#2-5CPU" class="headerlink" title="2.5CPU"></a>2.5CPU</h5><p>确定了机箱和主板的型号之后，自然而然就到了CPU的选择了。</p>
 <p>CPU的选择除了依然借助<a href="https://pcpartpicker.com/" target="_blank" rel="noopener">pcoartpicker</a>的信息以外，还有参考<a href="https://cpuboss.com/" target="_blank" rel="noopener">CPU Boss</a>的数据(包括后面出现的CPU数据都来自这两个网址)。</p>
-<p>由于NAS最重要的是存储空间，因而P9D-I主板上的唯一一个PCI-E x16只能让位给阵列卡提供更多的SATA接口。于是独立显卡就无法安装了，但是NAS的功能里就包含了影音播放的功能</p>
+<p>由于NAS最重要的是存储空间，因而P9D-I主板上的唯一一个PCI-E x16只能让位给阵列卡提供更多的SATA接口。于是独立显卡就无法安装了，但是又因为NAS的功能需求里就包含了影音播放的功能，那么CPU就 必须带有核显了。</p>
+<p>但但但但是!!!!带有核显的E3 1150针的CPU</p>
 <h5 id="2-6散热"><a href="#2-6散热" class="headerlink" title="2.6散热"></a>2.6散热</h5><h5 id="2-7内存"><a href="#2-7内存" class="headerlink" title="2.7内存"></a>2.7内存</h5><h5 id="2-8电源"><a href="#2-8电源" class="headerlink" title="2.8电源"></a>2.8电源</h5><h5 id="2-9PCI-E拓展卡"><a href="#2-9PCI-E拓展卡" class="headerlink" title="2.9PCI-E拓展卡"></a>2.9PCI-E拓展卡</h5><h5 id="0-更新时间"><a href="#0-更新时间" class="headerlink" title="0.更新时间."></a>0.更新时间.</h5><ol>
 <li>2020.06.21</li>
 <li>2020.06.22</li>
@@ -389,7 +393,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="NAS装配-一" data-title="hexo+typora 插入图片" data-url="http://yoursite.com/2019/06/08/NAS%E8%A3%85%E9%85%8D-%E4%B8%80/"></div>
+	<div class="ds-thread" data-thread-key="NAS装配-一" data-title="NAS装配系列第一篇" data-url="http://yoursite.com/2019/06/08/NAS%E8%A3%85%E9%85%8D-%E4%B8%80/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
